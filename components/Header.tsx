@@ -7,8 +7,18 @@ const Header = () => {
     return (
         <header className="sticky top-0 header">
             <div className="container header-wrapper">
-                <Link href="/">
-                    <Image src="/assets/icons/logo.svg" alt="Signalist logo" width={140} height={32} className="h-8 w-auto cursor-pointer" />
+                <Link href="/" className="flex items-center gap-2">
+                    <Image
+                        src="/assets/icons/logo.svg"
+                        alt="Stocks icon"
+                        width={28}
+                        height={30}
+                        className="h-8 w-auto"
+                    />
+                    <div className="flex flex-col leading-tight">
+                        <span className="text-white font-bold text-base">Stonks</span>
+                        <span className="text-gray-400 text-xs">bleh bleh</span>
+                    </div>
                 </Link>
                 <nav className="hidden sm:block">
                     <NavItems />
